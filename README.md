@@ -178,4 +178,12 @@ CONST_eventType
 
 ```
 
+## Cross Refference Prefix (Order by alphabet)
+
+```
+-- DO THIS --
+XREF_group_user
+XREF_attribute_event
+
+```
 
