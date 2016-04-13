@@ -170,3 +170,12 @@ FK_userID_b
 FK_userID_c 
 FK_userID_d
 ```
+## Naming tables that have constant values 
+```
+-- DO THIS --
+CONST_userType
+CONST_eventType
+
+```
+
+
