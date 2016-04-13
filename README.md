@@ -101,8 +101,8 @@ ISVacationDay
 
 ```
 -- DO THIS --
-userID
-userPermissionID
+user_ID
+userPermission_ID
 
 -- NOT THIS --
 id
@@ -112,11 +112,11 @@ upid
 + Foreign keys should be prefixed with a capitalized FK_ in order to visually denote relationships and also to avoid ambigous table selects. After the FK_ the name of the column must comply with our naming conventions.
 ```
 -- DO THIS --
-FK_userID
+FK_user_ID
 
 -- NOT THIS --
 fkuserid
-userID
+user_ID
 ```
 + Boolean columns should use the is prefix.
 ```
@@ -184,6 +184,17 @@ CONST_eventType
 -- DO THIS --
 XREF_group_user
 XREF_attribute_event
+
+```
+
+## ID is Postfix!
+
+```
+-- DO THIS --
+user_ID
+event_ID
+user_Type
+event_Date
 
 ```
 
