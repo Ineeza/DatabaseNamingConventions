@@ -153,19 +153,20 @@ date_updated
 
 
 ## Multiple foreign keys to the same table
-### If they have orders
+### If they indicate flow, use to/from keywords
 ```
 -- DO THIS --
-FK_from_userID
+FK_from_userID 
 FK_to_userID
+
 ```
 
-### If they are just combinations
+### If they don't 
 
 ```
 -- DO THIS --
-FK_userID_a
-FK_userID_b
-FK_userID_c
+FK_userID_a 
+FK_userID_b 
+FK_userID_c 
 FK_userID_d
 ```
