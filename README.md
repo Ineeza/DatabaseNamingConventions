@@ -165,10 +165,10 @@ FK_to_userID
 
 ```
 -- DO THIS --
-FK_userID_a 
-FK_userID_b 
-FK_userID_c 
-FK_userID_d
+FK_A_userID 
+FK_B_userID 
+FK_C_userID
+FK_D_userID
 ```
 ## Naming tables that have constant values 
 ```
@@ -187,14 +187,25 @@ XREF_attribute_event
 
 ```
 
-## ID is Postfix!
+## Postfix and Reserved words
+- ID is Postfix
+
+### Reserved Words white list
+- FK
+- XREF
+- FROM
+- TO
+- TYPE
+- DATE
+- ID
+
 
 ```
 -- DO THIS --
 user_ID
 event_ID
-user_Type
-event_Date
+user_TYPE
+event_DATE
 
 ```
 
