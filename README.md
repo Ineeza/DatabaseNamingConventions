@@ -131,8 +131,8 @@ sold
 + Date columns should be suffixed in camel case with the word Date.
 ```
 -- DO THIS --
-createdDate
-updatedDate
+created_Date
+updated_Date
 
 -- NOT THIS --
 date_created
@@ -156,8 +156,8 @@ date_updated
 ### If they indicate flow, use to/from keywords
 ```
 -- DO THIS --
-FK_from_userID 
-FK_to_userID
+FK_FROM_user_ID 
+FK_TO_user_ID
 
 ```
 
@@ -165,16 +165,16 @@ FK_to_userID
 
 ```
 -- DO THIS --
-FK_A_userID 
-FK_B_userID 
-FK_C_userID
-FK_D_userID
+FK_A_user_ID 
+FK_B_user_ID 
+FK_C_user_ID
+FK_D_user_ID
 ```
 ## Naming tables that have constant values 
 ```
 -- DO THIS --
-CONST_userType
-CONST_eventType
+CONST_user_TYPE
+CONST_event_TYPE
 
 ```
 
