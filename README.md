@@ -178,7 +178,7 @@ CONST_event_TYPE
 
 ```
 
-## Cross Refference Prefix (Order by alphabet)
+## Cross Reference Prefix (Order by alphabet)
 
 ```
 -- DO THIS --
