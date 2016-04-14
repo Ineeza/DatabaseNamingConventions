@@ -209,3 +209,8 @@ event_DATE
 
 ```
 
+## Prefix and Postfix order
+```
+FK > (XREF, FROM, TO) > TYPE > ID 
+FK_FROM_hoge_TYPE_ID
+```
