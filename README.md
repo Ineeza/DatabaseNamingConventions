@@ -128,11 +128,11 @@ isSold
 active
 sold
 ```
-+ Date columns should be suffixed in camel case with the word Date.
++ Date columns should be suffixed in camel case with the word DATE.
 ```
 -- DO THIS --
-created_Date
-updated_Date
+created_DATE
+updated_DATE
 
 -- NOT THIS --
 date_created
