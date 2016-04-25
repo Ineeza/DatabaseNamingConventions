@@ -153,6 +153,12 @@ date_updated
 
 
 ## Multiple foreign keys to the same table
+### If they indicate flow, use Start/End words
+```
+-- DO THIS --
+Start_user_ID
+End_user_ID
+```
 
 ### If they don't indicate flow, use zero
 
