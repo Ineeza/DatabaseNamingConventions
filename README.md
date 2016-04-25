@@ -109,10 +109,10 @@ id
 userid
 upid
 ```
-+ Foreign keys should be prefixed with a capitalized FK_ in order to visually denote relationships and also to avoid ambigous table selects. After the FK_ the name of the column must comply with our naming conventions.
++ API's ID should be prefixed with a capitalized API_ in order to visually avoid ambigous table selects. After the API_ the name of the column must comply with our naming conventions.
 ```
 -- DO THIS --
-FK_user_ID
+API_facebook_ID
 
 -- NOT THIS --
 fkuserid
@@ -131,8 +131,8 @@ sold
 + Date columns should be suffixed in camel case with the word DATE.
 ```
 -- DO THIS --
-created_DATE
-updated_DATE
+created_Date
+updated_Date
 
 -- NOT THIS --
 date_created
@@ -153,28 +153,21 @@ date_updated
 
 
 ## Multiple foreign keys to the same table
-### If they indicate flow, use to/from keywords
-```
--- DO THIS --
-FK_FROM_user_ID 
-FK_TO_user_ID
 
-```
-
-### If they don't 
+### If they don't indicate flow, use zero
 
 ```
 -- DO THIS --
-FK_A_user_ID 
-FK_B_user_ID 
-FK_C_user_ID
-FK_D_user_ID
+user_ID_01
+user_ID_02
+user_ID_03
+user_ID_04
 ```
 ## Naming tables that have constant values 
 ```
 -- DO THIS --
-CONST_user_TYPE
-CONST_event_TYPE
+user_Type
+event_Type
 
 ```
 
@@ -182,8 +175,8 @@ CONST_event_TYPE
 
 ```
 -- DO THIS --
-XREF_group_user
-XREF_attribute_event
+Xref_group_user
+Xref_attribute_event
 
 ```
 
@@ -191,26 +184,25 @@ XREF_attribute_event
 - ID is Postfix
 
 ### Reserved Words white list
-- FK
-- XREF
-- FROM
-- TO
-- TYPE
-- DATE
+- Xref
+- Type
+- Date
+- Start
+- End
 - ID
-
+- API
 
 ```
 -- DO THIS --
 user_ID
 event_ID
-user_TYPE
-event_DATE
+user_Type
+event_Date
 
 ```
 
 ## Prefix and Postfix order
 ```
-FK > (XREF, FROM, TO) > TYPE > ID 
-FK_FROM_hoge_TYPE_ID
+API > Xref > Type > ID 
+API_hoge_Type_ID
 ```
